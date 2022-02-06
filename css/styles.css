@@ -1,0 +1,222 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: #212121;
+}
+
+/* reset */
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.heading {
+  margin: 0;
+}
+
+/* header common */
+.top-logo,
+.bottom-logo {
+  font-family: Raleway;
+  margin-left: 215px;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #2196f3;
+}
+
+.navigation,
+.top-contacts {
+  display: flex;
+  flex-direction: inherit;
+}
+
+.nav-list-link,
+.top-mail,
+.top-tel {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.19;
+  letter-spacing: 0.02em;
+}
+
+.top-tel,
+.top-mail {
+  color: #757575;
+}
+
+.nav-list-link:hover,
+.nav-list-link:focus,
+.top-mail:hover,
+.top-mail:focus,
+.top-tel:hover,
+.top-tel:focus {
+  color: #2196f3;
+}
+
+/* header */
+.page-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.page-header .logo-span {
+  color: #212121;
+}
+
+.site-navigation {
+  margin: 0 330px 0 95px;
+  align-items: center;
+}
+
+a[href="portfolio.html"] {
+  margin: 0 50px;
+}
+
+.top-mail {
+  margin-right: 50px;
+}
+
+/* order section */
+
+.order-section {
+  background-color: #2f303a;
+}
+
+.order-section-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.order-btn {
+  background-color: #2196f3;
+  color: #fff;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #188ce8;
+}
+
+/* advantages section */
+
+.advantages-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.advantages-title {
+  display: none;
+}
+
+.advantages-item-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.advantages-item-description {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+/* about section */
+
+.about-section-title,
+.team-section-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.about-section-list {
+  display: flex;
+  flex-direction: row;
+}
+
+/* team section */
+
+.team-section {
+}
+
+.team-section-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.team-member-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team-member-position {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* footer */
+footer {
+  background-color: #2f303a;
+}
+.footer .logo-span {
+  color: #fff;
+}
+
+.bottom-logo {
+  margin-top: 60px;
+}
+
+.address {
+  margin: 20px 0 0 215px;
+  padding-bottom: 60px;
+}
+
+.office-address {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #fff;
+}
+
+.bottom-mail,
+.bottom-tel {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #fff;
+  opacity: 0.6;
+}
+
+.bottom-contacts-list {
+  padding-left: 0;
+  margin: 0;
+}
