@@ -1,6 +1,15 @@
+:root {
+  --main-color: #212121;
+  --highlight-color: #2196f3;
+  --aux-text-color: #757575;
+  --background-color: #2f303a;
+  --hero-footer-text-color: #fff;
+  --selector-button-background-color: #f5f4fa;
+}
+
 body {
   font-family: "Roboto", sans-serif;
-  color: #212121;
+  color: var(--main-color);
 }
 
 /* reset */
@@ -27,7 +36,7 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #2196f3;
+  color: var(--highlight-color);
 }
 
 .navigation,
@@ -48,7 +57,7 @@ body {
 
 .top-tel,
 .top-mail {
-  color: #757575;
+  color: var(--aux-text-color);
 }
 
 .nav-list-link:hover,
@@ -57,7 +66,7 @@ body {
 .top-mail:focus,
 .top-tel:hover,
 .top-tel:focus {
-  color: #2196f3;
+  color: var(--highlight-color);
 }
 
 /* header */
@@ -68,7 +77,7 @@ body {
 }
 
 .page-header .logo-span {
-  color: #212121;
+  color: var(--main-color);
 }
 
 .site-navigation {
@@ -97,13 +106,14 @@ a[href="portfolio.html"] {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #fff;
+  color: var(--hero-footer-text-color);
 }
 
 .order-btn {
-  background-color: #2196f3;
-  color: #fff;
+  background-color: var(--highlight-color);
+  color: var(--hero-footer-text-color);
   text-align: center;
+  cursor: pointer;
 }
 
 .button:hover {
@@ -122,7 +132,6 @@ a[href="portfolio.html"] {
 }
 
 .advantages-item-title {
-  font-weight: bold;
   font-size: 14px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -130,18 +139,16 @@ a[href="portfolio.html"] {
 }
 
 .advantages-item-description {
-  font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--aux-text-color);
 }
 
 /* about section */
 
 .about-section-title,
 .team-section-title {
-  font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -154,9 +161,6 @@ a[href="portfolio.html"] {
 }
 
 /* team section */
-
-.team-section {
-}
 
 .team-section-list {
   display: flex;
@@ -172,7 +176,6 @@ a[href="portfolio.html"] {
 }
 
 .team-member-position {
-  font-weight: normal;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -181,10 +184,10 @@ a[href="portfolio.html"] {
 
 /* footer */
 footer {
-  background-color: #2f303a;
+  background-color: var(--background-color);
 }
 .footer .logo-span {
-  color: #fff;
+  color: var(--hero-footer-text-color);
 }
 
 .bottom-logo {
@@ -198,25 +201,52 @@ footer {
 
 .office-address {
   font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #fff;
+  color: var(--hero-footer-text-color);
 }
 
 .bottom-mail,
 .bottom-tel {
   font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #fff;
+  color: var(--hero-footer-text-color);
   opacity: 0.6;
 }
 
 .bottom-contacts-list {
   padding-left: 0;
   margin: 0;
+}
+
+/* portfolio page */
+
+.selector-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.selector-title {
+  display: none;
+}
+.selector-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+  background-color: var(--selector-button-background-color);
+  cursor: pointer;
+  font-family: inherit;
+  border: none;
+}
+
+.credential-item-title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
 }
