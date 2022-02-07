@@ -4,7 +4,8 @@
   --aux-text-color: #757575;
   --background-color: #2f303a;
   --hero-footer-text-color: #fff;
-  --selector-button-background-color: #f5f4fa;
+  --filter-button-background-color: #f5f4fa;
+  --order-button-hover-focus: #188ce8;
 }
 
 body {
@@ -27,18 +28,27 @@ body {
   margin: 0;
 }
 
-/* header common */
+/* logos */
 .top-logo,
 .bottom-logo {
   font-family: Raleway;
-  margin-left: 215px;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  margin-left: 215px;
   color: var(--highlight-color);
 }
 
+/* contacts-hover-focus-active */
+.contact:hover,
+.contact:focus,
+.contact:active {
+  color: var(--highlight-color);
+  opacity: 1;
+}
+
+/* header */
 .navigation,
 .top-contacts {
   display: flex;
@@ -62,14 +72,10 @@ body {
 
 .nav-list-link:hover,
 .nav-list-link:focus,
-.top-mail:hover,
-.top-mail:focus,
-.top-tel:hover,
-.top-tel:focus {
+.nav-list-link:active {
   color: var(--highlight-color);
 }
 
-/* header */
 .page-header {
   display: flex;
   flex-direction: row;
@@ -81,8 +87,8 @@ body {
 }
 
 .site-navigation {
-  margin: 0 330px 0 95px;
   align-items: center;
+  margin: 0 330px 0 95px;
 }
 
 a[href="portfolio.html"] {
@@ -103,25 +109,26 @@ a[href="portfolio.html"] {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  text-align: center;
   color: var(--hero-footer-text-color);
 }
 
 .order-btn {
+  font-family: inherit;
+  text-align: center;
   background-color: var(--highlight-color);
   color: var(--hero-footer-text-color);
-  text-align: center;
   cursor: pointer;
 }
 
-.button:hover {
-  background-color: #188ce8;
+.order-btn:hover,
+.order-btn:focus {
+  background-color: var(--order-button-hover-focus);
 }
 
 /* advantages section */
-
 .advantages-list {
   display: flex;
   flex-direction: row;
@@ -151,8 +158,8 @@ a[href="portfolio.html"] {
 .team-section-title {
   font-size: 36px;
   line-height: 1.17;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 
 .about-section-list {
@@ -161,10 +168,16 @@ a[href="portfolio.html"] {
 }
 
 /* team section */
-
+.team-section {
+  background-color: var(--filter-button-background-color);
+}
 .team-section-list {
   display: flex;
   flex-direction: row;
+}
+
+.team-list-item {
+  background-color: var(--hero-footer-text-color);
 }
 
 .team-member-title {
@@ -183,7 +196,7 @@ a[href="portfolio.html"] {
 }
 
 /* footer */
-footer {
+.footer {
   background-color: var(--background-color);
 }
 .footer .logo-span {
@@ -223,28 +236,39 @@ footer {
 }
 
 /* portfolio page */
+/* portfolio header - same */
 
-.selector-list {
+/* main-section */
+/* filter */
+.filter-list {
   display: flex;
   flex-direction: row;
 }
 
-.selector-title {
+.filter-title {
   display: none;
 }
-.selector-button {
+.filter-button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--main-color);
-  background-color: var(--selector-button-background-color);
   cursor: pointer;
   font-family: inherit;
   border: none;
+  color: var(--main-color);
+  background-color: var(--filter-button-background-color);
 }
 
+.filter-button:active,
+.filter-button:hover,
+.filter-button:focus {
+  background-color: var(--highlight-color);
+  color: var(--hero-footer-text-color);
+}
+
+/* credentials */
 .credential-item-title {
   font-size: 18px;
   line-height: 2;
@@ -257,3 +281,5 @@ footer {
   letter-spacing: 0.03em;
   color: var(--aux-text-color);
 }
+
+/* portfolio footer - same */
