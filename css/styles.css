@@ -32,11 +32,10 @@ body {
 .top-logo,
 .bottom-logo {
   font-family: Raleway;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  margin-left: 215px;
   color: var(--highlight-color);
 }
 
@@ -49,16 +48,10 @@ body {
 }
 
 /* header */
-.navigation,
-.top-contacts {
-  display: flex;
-  flex-direction: inherit;
-}
 
 .nav-list-link,
 .top-mail,
 .top-tel {
-  font-family: Roboto;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.19;
@@ -76,33 +69,14 @@ body {
   color: var(--highlight-color);
 }
 
-.page-header {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
 .page-header .logo-span {
   color: var(--main-color);
-}
-
-.site-navigation {
-  align-items: center;
-  margin: 0 330px 0 95px;
-}
-
-a[href="portfolio.html"] {
-  margin: 0 50px;
-}
-
-.top-mail {
-  margin-right: 50px;
 }
 
 /* order section */
 
 .order-section {
-  background-color: #2f303a;
+  background-color: var(--background-color);
 }
 
 .order-section-title {
@@ -129,10 +103,6 @@ a[href="portfolio.html"] {
 }
 
 /* advantages section */
-.advantages-list {
-  display: flex;
-  flex-direction: row;
-}
 
 .advantages-title {
   display: none;
@@ -160,20 +130,12 @@ a[href="portfolio.html"] {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: center;
-}
-
-.about-section-list {
-  display: flex;
-  flex-direction: row;
+  color: var(--main-color);
 }
 
 /* team section */
 .team-section {
   background-color: var(--filter-button-background-color);
-}
-.team-section-list {
-  display: flex;
-  flex-direction: row;
 }
 
 .team-list-item {
@@ -193,6 +155,7 @@ a[href="portfolio.html"] {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+  color: var(--aux-text-color);
 }
 
 /* footer */
@@ -201,15 +164,6 @@ a[href="portfolio.html"] {
 }
 .footer .logo-span {
   color: var(--hero-footer-text-color);
-}
-
-.bottom-logo {
-  margin-top: 60px;
-}
-
-.address {
-  margin: 20px 0 0 215px;
-  padding-bottom: 60px;
 }
 
 .office-address {
@@ -230,20 +184,11 @@ a[href="portfolio.html"] {
   opacity: 0.6;
 }
 
-.bottom-contacts-list {
-  padding-left: 0;
-  margin: 0;
-}
-
 /* portfolio page */
 /* portfolio header - same */
 
 /* main-section */
 /* filter */
-.filter-list {
-  display: flex;
-  flex-direction: row;
-}
 
 .filter-title {
   display: none;
